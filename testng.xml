@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="main.Listeners" />
+	</listeners>
+	<test thread-count="5" name="S3">
+		<classes>
+			<class name="TestCases.S3CloudFront" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="CloudFront">
+		<classes>
+			<class name="TestCases.CloudFront" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
